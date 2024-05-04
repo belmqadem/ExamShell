@@ -83,7 +83,3 @@
 - sort_int_tab
 - sort_list
 ```
-
-## FIND SUBJECTS ON
-
-https://trello.com/b/WIOis4bQ/examshell-wethinkcode
