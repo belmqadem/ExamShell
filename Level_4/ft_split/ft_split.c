@@ -29,6 +29,17 @@ char    *ft_strncpy(char *dst, char *src, int n)
     return dst;
 }
 
+void    free_array(char **str)
+{
+    int i = 0;
+    while (str[i])
+    {
+        free(str[i]);
+        i++;
+    }
+    free(str);
+}
+
 char    **ft_split(char *str)
 {
     char    **split;
@@ -50,7 +61,10 @@ char    **ft_split(char *str)
         {
             split[k] = (char *)malloc(((i - j) + 1) * sizeof(char));
             if (NULL == split[k])
+            {
+                free_array(split);
                 return (NULL);
+            }
             ft_strncpy(split[k++], &str[j], i - j);
         }
     }

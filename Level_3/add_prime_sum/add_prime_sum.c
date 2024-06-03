@@ -37,7 +37,7 @@ int	ft_is_prime(int nb)
 	i = 2;
 	if (nb < 2)
 		return (0);
-	while (i <= (nb / 2))
+	while (i <= (nb / i))
 	{
 		if (nb % i == 0)
 			return (0);
@@ -55,9 +55,7 @@ int main(int ac, char **av)
 		while (nb > 0)
 		{
 			if (ft_is_prime(nb))
-			{
 				sum += nb;
-			}
 			nb--;
 		}
 		ft_putnbr(sum);

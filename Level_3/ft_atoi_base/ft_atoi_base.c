@@ -31,7 +31,6 @@ int ft_atoi_base(const char *str, int str_base)
 		sign = -1;	
 		++str;		
 	}
-
 	while ((digit = get_digit(to_lower(*str), str_base)) >= 0)
 	{
 		result = result * str_base;

@@ -19,7 +19,6 @@ void    print_hex(int nbr)
     write (1, &hex[nbr % 16], 1);
 }
 
-
 int main(int ac, char **av)
 {
     int nbr;

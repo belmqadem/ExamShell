@@ -9,13 +9,3 @@ int is_power_of_2(unsigned int n)
 	else
 		return 0;
 }
-
-#include <stdio.h>
-int main()
-{
-	int n = 9;
-	if (is_power_of_2(n))
-		printf("ok\n");
-	else
-		printf("no\n");
-}
